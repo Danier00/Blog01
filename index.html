@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" />
+    <script src="js/jquery-3.7.1.min.js" defer></script>
+    <script src="js/popper.min.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+    <title>BLOG</title>
+  </head>
+  <body class="bs-body bg-secondary" style="--bs-bg-opacity: 0.4">
+    <nav class="navbar navbar-expand-lg bg-secondary position" id="inicio">
+      <div class="container-fluid">
+        <!-- Marca o logotipo que aparece en la barra de navegacion -->
+        <a class="navbar-brand" href="#"
+          ><img src="/media/logo.jpg" width="50px" height="50px" alt=""
+        /></a>
+        <!-- Boton que aparece en pantallas pequeñas para expandir el menu -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#inicio" aria-current="page" class="nav-link active"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#nosotros" aria-current="page" class="nav-link active"
+                >Sobre Nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contacto" aria-current="page" class="nav-link active"
+                >Contáctanos</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#foro"
+                aria-current="page"
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Foro</a
+              >
+              <!-- Menu desplegable con varias opciones -->
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#musica" class="dropdown-item">Música</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item" hidden>Tatuajes</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <button
+                type="button"
+                class="btn btn-primary bg-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#ejemplo"
+              >
+                Inicio De sesión
+              </button>
+              <div
+                class="modal"
+                id="ejemplo"
+                tabindex="-1"
+                aria-labelledby="modallabel"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title" id="modallabel">
+                        Inicio de sesión
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn btn-close btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#ejemplo1"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1"
+                            >Ingrese su Correo</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            placeholder="Enter email"
+                          />
+                          <small
+                            id="emailHelp"
+                            class="form-text text-muted"
+                          ></small>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Contraseña</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="exampleInputPassword1"
+                            placeholder="Password"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="submit"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#ejemplo1"
+                      >
+                        Iniciar sesión
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="position-relative overflow-hidden p-1 m-md-1 text-center bg-light"
+    >
+      <img src="media/baner.jpg" width="100%" height="100%" alt="" />
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div
+        class="product-device product-device-2 shadow-sm d-none d-md-block"
+      ></div>
+    </div>
+    <h1 class="title">Nosotros</h1>
+    <div
+      id="nosotros"
+      class="d-inline-flex row justify-content-around container m-3"
+    >
+      <div style="width: 18rem" class="card m-1 col-4">
+        <div class="card-body">
+          <h4 class="card-title">Mision</h4>
+          <p>
+            Inspirar a través de la tinta y el sonido. Nuestra misión es
+            conectar a las personas a través de la música y los tatuajes,
+            explorando las profundas conexiones entre ambas artes. Queremos ser
+            un espacio donde los amantes de la música y los tatuajes encuentren
+            inspiración, descubran nuevos artistas y compartan sus propias
+            experiencias.
+          </p>
+        </div>
+      </div>
+      <div style="width: 18rem" class="card m-1 col-4">
+        <div class="card-body">
+          <h4 class="card-title">Vision</h4>
+          <p>
+            Ser la plataforma de referencia en habla hispana que une la música y
+            los tatuajes, fomentando una comunidad global de individuos
+            creativos y apasionados. Aspiramos a convertirnos en un referente de
+            la cultura contemporánea, donde la música y los tatuajes se fusionan
+            para crear una identidad única.
+          </p>
+        </div>
+      </div>
+      <div style="width: 18rem" class="card m-1 col-4">
+        <div class="card-body">
+          <h4 class="card-title">Que encontraras aqui</h4>
+          <p class="text">
+            Reseñas de álbumes y conciertos Entrevistas con tatuadores y músicos
+            Tendencias y estilos Guías y consejos Una comunidad
+          </p>
+        </div>
+      </div>
+      <a class="btn btn-secondary" href="#inicio">Inicio</a>
+    </div>
+    <div id="musica" class="d-inline-flex row justify-content-center container">
+      <div class="card mb-4 box-shadow col-4 m-0 w-50">
+        <div class="card-body">
+          <iframe
+            src="https://open.spotify.com/embed/track/1dPbuvgEPPGtcRzhKmjhsy?utm_source=generator"
+            width="90%"
+            height="80%"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+          <button type="button" class="btn btn-sm btn-outline-secondary">
+            View
+          </button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">
+            Edit
+          </button>
+        </div>
+      </div>
+      <div class="card mb-4 box-shadow col-4 m-0 w-50">
+        <div class="card-body">
+          <iframe
+            src="https://open.spotify.com/embed/track/24r3DhkmDUKHpEtgMnjdiX?utm_source=generator"
+            width="90%"
+            height="80%"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+          <button type="button" class="btn btn-sm btn-outline-secondary">
+            View
+          </button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">
+            Edit
+          </button>
+        </div>
+      </div>
+      <div class="card mb-4 box-shadow col-4 m-0 w-50">
+        <div class="card-body">
+          <iframe
+            src="https://open.spotify.com/embed/track/5mbd6n4o2ArdqlZqd3Dahu?utm_source=generator"
+            width="90%"
+            height="80%"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+          <button type="button" class="btn btn-sm btn-outline-secondary">
+            View
+          </button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">
+            Edit
+          </button>
+        </div>
+      </div>
+      <a class="btn btn-secondary" href="#inicio">Inicio</a>
+    </div>
+    <h1 class="title">Contáctanos</h1>
+    <button
+      id="contacto"
+      type="button"
+      class="btn btn-primary m-4"
+      data-bs-toggle="modal"
+      data-bs-target="#contactom"
+    >
+      Contáctanos
+    </button>
+    <div
+      class="modal"
+      id="contactom"
+      tabindex="-1"
+      aria-labelledby="ejemplomodallabel"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="ejemplomodallabel">
+              Formulario de contacto
+            </h1>
+            <button
+              type="button"
+              class="btn btn-close btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#ejemplo1"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="contacto">
+                <input type="text" placeholder="NOMBRE" class="form-control" />
+              </div>
+              <div class="contacto">
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="CORREO"
+                  class="form-control"
+                />
+              </div>
+              <div class="contacto">
+                <textarea
+                  name=""
+                  class="form-control"
+                  placeholder="MENSAJE"
+                  id=""
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#ejemplo1"
+            >
+              cerrar
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#ejemplo1"
+            >
+              Guardar Cambios
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
